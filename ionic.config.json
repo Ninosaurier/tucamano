@@ -1,0 +1,7 @@
+{
+  "name": "tucamano",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
