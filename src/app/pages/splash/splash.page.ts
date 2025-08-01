@@ -3,7 +3,8 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonContent, IonHeader, IonTitle, IonToolbar, IonCol, IonRow, IonGrid } from '@ionic/angular/standalone';
 import { Router } from '@angular/router';
-import { ROUTE_PATHS } from 'src/app/route-paths';
+import { ROUTE_PATHS } from 'src/app/constants/route-paths';
+
 
 @Component({
   selector: 'app-splash',

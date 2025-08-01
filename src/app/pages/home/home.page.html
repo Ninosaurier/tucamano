@@ -10,9 +10,73 @@
       <ion-title size="large">home</ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-grid>
+  <ion-grid class="full-height">
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="12" class="ion-text-center">
+        <ion-row class="ion-justify-content-center">
+          <ion-col size="11"><h2>Change language:</h2></ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="12">
+            <ion-img
+            src="{{ ICONS_FLAGS.DE }}"
+            alt="German flag"
+          ></ion-img>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="12" >
+            Sign language: DSG
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-justify-content-center">
+      <ion-col class="ion-text-center" size="11">
+        <h2>Menu</h2>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="10">
+        <ion-button shape="round" expand="full">
+          <ion-icon slot="start" name="search"></ion-icon>
+          Search
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="10">
+        <ion-button shape="round" expand="full">
+          <ion-icon name="library"></ion-icon>
+          Flash Cards
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="10">
+        <ion-button shape="round" expand="full" [disabled]="true">
+          <ion-icon name="settings"></ion-icon>
+          Settings (in future)
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="10">
+        <ion-button shape="round" expand="full">
+          <ion-icon name="code"></ion-icon>
+          Credits
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-margin-top">
+      <ion-col class="ion-text-center">
+        Tucamano Logo
+      </ion-col>
+    </ion-row>
     <ion-row>
-      <ion-col>1</ion-col>
+      <ion-col class="ion-text-center">
+        Version: 0.0.1 Alpha-Version
+      </ion-col>
     </ion-row>
   </ion-grid>
 </ion-content>
