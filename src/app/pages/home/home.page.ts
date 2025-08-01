@@ -47,4 +47,8 @@ export class HomePage implements OnInit {
   goToScreenDictionarySelectorPage() {
     this.router.navigateByUrl(ROUTE_PATHS.DICTIONARY_SELECTOR, { replaceUrl: true });
   }
+
+  goToScreenCreditPage() {
+    this.router.navigateByUrl(ROUTE_PATHS.CREDIT, { replaceUrl: false });
+  }
 }

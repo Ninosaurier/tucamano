@@ -18,4 +18,8 @@ export const routes: Routes = [
     path: 'dictionary-selector',
     loadComponent: () => import('./pages/dictionary-selector/dictionary-selector.page').then( m => m.DictionarySelectorPage)
   },
+  {
+    path: 'credit',
+    loadComponent: () => import('./pages/credit/credit.page').then( m => m.CreditPage)
+  },
 ];
