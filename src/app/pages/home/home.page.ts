@@ -14,6 +14,8 @@ import {
   IonImg
 } from '@ionic/angular/standalone';
 import { ICONS_FLAGS } from 'src/app/constants/icon-flags';
+import { Router } from '@angular/router';
+import { ROUTE_PATHS } from 'src/app/constants/route-paths';
 @Component({
   selector: 'app-home',
   templateUrl: './home.page.html',
@@ -38,7 +40,11 @@ export class HomePage implements OnInit {
 
   ICONS_FLAGS = ICONS_FLAGS;
 
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit() {}
+
+  goToScreenDictionarySelectorPage() {
+    this.router.navigateByUrl(ROUTE_PATHS.DICTIONARY_SELECTOR, { replaceUrl: true });
+  }
 }

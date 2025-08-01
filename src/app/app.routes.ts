@@ -14,4 +14,8 @@ export const routes: Routes = [
     path: 'home',
     loadComponent: () => import('./pages/home/home.page').then( m => m.HomePage)
   },
+  {
+    path: 'dictionary-selector',
+    loadComponent: () => import('./pages/dictionary-selector/dictionary-selector.page').then( m => m.DictionarySelectorPage)
+  },
 ];

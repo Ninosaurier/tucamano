@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Choose sign language</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Choosing sign dictionary</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-searchbar
+          animated="true"
+          [(ngModel)]="searchTerm"
+          (ionInput)="filterSignLanguage()"
+          placeholder="search dictionary..."
+          show-clear-button="always"
+        ></ion-searchbar>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-list lines="full">
+          <ion-row
+            *ngFor="let item of filteredItems"
+            class="ion-align-items-center border-bottom"
+            (click)="setSignDictionary()"
+          >
+            <ion-col size="3" >
+              <ion-img [src]="item.imagePath"></ion-img>
+            </ion-col>
+            <ion-col size="7">{{ item.name }} </ion-col>
+            <ion-col size="2">{{ item.abbreviation }} </ion-col>
+          </ion-row>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

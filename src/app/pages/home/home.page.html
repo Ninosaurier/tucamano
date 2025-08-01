@@ -19,6 +19,7 @@
         <ion-row>
           <ion-col size="12">
             <ion-img
+            (click)="goToScreenDictionarySelectorPage()"
             src="{{ ICONS_FLAGS.DE }}"
             alt="German flag"
           ></ion-img>
@@ -46,9 +47,9 @@
     </ion-row>
     <ion-row class="ion-justify-content-center">
       <ion-col size="10">
-        <ion-button shape="round" expand="full">
+        <ion-button shape="round" expand="full" [disabled]="true">
           <ion-icon name="library"></ion-icon>
-          Flash Cards
+          Flash Cards (in future)
         </ion-button>
       </ion-col>
     </ion-row>
@@ -75,7 +76,7 @@
     </ion-row>
     <ion-row>
       <ion-col class="ion-text-center">
-        Version: 0.0.1 Alpha-Version
+        Version: 0.0.1 Alpha
       </ion-col>
     </ion-row>
   </ion-grid>
