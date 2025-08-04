@@ -1,0 +1,8 @@
+{
+  "/api": {
+    "target": "https://signdict.org/graphql-api",
+    "secure": true,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  }
+}

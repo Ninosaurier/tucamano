@@ -22,4 +22,12 @@ export const routes: Routes = [
     path: 'credit',
     loadComponent: () => import('./pages/credit/credit.page').then( m => m.CreditPage)
   },
+  {
+    path: 'search-sign',
+    loadComponent: () => import('./pages/search-sign/search-sign.page').then( m => m.SearchSignPage)
+  },
+  {
+    path: 'sign-detail',
+    loadComponent: () => import('./pages/sign-detail/sign-detail.page').then( m => m.SignDetailPage)
+  },
 ];

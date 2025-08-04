@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/search-sign"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Detailansicht</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div *ngIf="signData; else noData">
+    <h2>{{ signData.text }}</h2>
+    <ion-text color="medium"><p>Typ: {{ signData.type }}</p></ion-text>
+
+    <div *ngIf="signData.currentVideo; else noVideo">
+      <video
+        [src]="signData.currentVideo.videoUrl"
+        controls
+        style="width: 100%; max-height: 300px; border-radius: 12px; margin: 1rem 0;"
+      ></video>
+
+      <ion-item>
+        <ion-label>
+          <p><strong>Lizenz:</strong> {{ signData.currentVideo.license }}</p>
+          <p><strong>Erstellt von:</strong> {{ signData.currentVideo.user.name }}</p>
+        </ion-label>
+      </ion-item>
+    </div>
+
+    <ng-template #noVideo>
+      <ion-text color="danger">
+        <p>Kein Video verfügbar.</p>
+      </ion-text>
+    </ng-template>
+  </div>
+
+  <ng-template #noData>
+    <ion-text color="danger">
+      <p>Daten konnten nicht geladen werden.</p>
+    </ion-text>
+  </ng-template>
+</ion-content>

@@ -19,7 +19,7 @@
         <ion-row>
           <ion-col size="12">
             <ion-img
-            (click)="goToScreenDictionarySelectorPage()"
+            (click)="goToDictionarySelectorPage()"
             src="{{ ICONS_FLAGS.DE }}"
             alt="German flag"
           ></ion-img>
@@ -39,7 +39,7 @@
     </ion-row>
     <ion-row class="ion-justify-content-center">
       <ion-col size="10">
-        <ion-button shape="round" expand="full">
+        <ion-button shape="round" expand="full" (click)="goToSearchSignPage()">
           <ion-icon slot="start" name="search"></ion-icon>
           Search
         </ion-button>
@@ -63,7 +63,7 @@
     </ion-row>
     <ion-row class="ion-justify-content-center">
       <ion-col size="10">
-        <ion-button shape="round" expand="full" (click)="goToScreenCreditPage()">
+        <ion-button shape="round" expand="full" (click)="goToCreditPage()">
           <ion-icon name="code"></ion-icon>
           Credits
         </ion-button>

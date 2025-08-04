@@ -44,11 +44,15 @@ export class HomePage implements OnInit {
 
   ngOnInit() {}
 
-  goToScreenDictionarySelectorPage() {
+  goToDictionarySelectorPage() {
     this.router.navigateByUrl(ROUTE_PATHS.DICTIONARY_SELECTOR, { replaceUrl: true });
   }
 
-  goToScreenCreditPage() {
+  goToCreditPage() {
     this.router.navigateByUrl(ROUTE_PATHS.CREDIT, { replaceUrl: false });
+  }
+
+  goToSearchSignPage() {
+    this.router.navigateByUrl(ROUTE_PATHS.SEARCH_SIGN, { replaceUrl: false });
   }
 }

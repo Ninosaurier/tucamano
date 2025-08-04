@@ -3,4 +3,6 @@ export const ROUTE_PATHS = {
   SPLASH: '/splash',
   DICTIONARY_SELECTOR: '/dictionary-selector',
   CREDIT: '/credit',
+  SEARCH_SIGN: '/search-sign',
+  SIGN_DETAIL: '/sign-detail'
 };
