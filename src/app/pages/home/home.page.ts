@@ -55,4 +55,8 @@ export class HomePage implements OnInit {
   goToSearchSignPage() {
     this.router.navigateByUrl(ROUTE_PATHS.SEARCH_SIGN, { replaceUrl: false });
   }
+
+  goToFlashCardPage() {
+    this.router.navigateByUrl(ROUTE_PATHS.FLASH_CARD_DECK_OVERVIEW, { replaceUrl: false });
+  }
 }

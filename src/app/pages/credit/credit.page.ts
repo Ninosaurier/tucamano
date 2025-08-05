@@ -13,7 +13,9 @@ import {
   IonItem,
   IonText,
   IonItemDivider,
-  IonList
+  IonList,
+  IonButtons,
+  IonBackButton
 } from '@ionic/angular/standalone';
 
 @Component({
@@ -31,7 +33,9 @@ import {
     FormsModule,
     IonLabel,
     IonItem,
-    IonList
+    IonList,
+    IonButtons,
+    IonBackButton
   ],
 })
 export class CreditPage implements OnInit {
