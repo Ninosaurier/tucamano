@@ -29,6 +29,7 @@ import {
 import { OverlayEventDetail } from '@ionic/core/components';
 import { DeckService } from 'src/app/service/deck.service';
 import { Deck } from 'src/app/models/deck.model';
+import {v4 as uuidv4} from 'uuid';
 
 @Component({
   selector: 'app-deck-overview',
@@ -99,9 +100,8 @@ export class DeckOverviewPage implements OnInit {
   }
 
   createNewDeck(draftDeckName: string) {
-    let newDeck: Deck = {title: draftDeckName, flashcards: []};
+    let newDeck: Deck = {id: uuidv4(), title: draftDeckName, flashcards: []};
     this.deckService.addDeck(newDeck);
-    console.log('Function: createNewDeck');
   }
 
   filterDecks() {
@@ -114,6 +114,5 @@ export class DeckOverviewPage implements OnInit {
         deck.title.toLowerCase().includes(term)
       );
     }
-    console.log('test: ', this.filteredDecks)
   }
 }
