@@ -76,7 +76,7 @@ Some features are not yet implemented, and the app is primarily intended for exp
 | Topic | Description |
 |-------|-------------|
 | What is *tucamano*? | Web app for learning sign languages (search, videos, flashcards) |
-| Installation | Clone → `npm install` → `npm start` |
+| Installation | Clone → `npm install` → `ionic serve -- --proxy-config proxy.conf.json` |
 | License | GPL-3.0 |
 | Development status | Prototype – many features still in progress |
 
